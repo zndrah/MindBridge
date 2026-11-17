@@ -1,0 +1,264 @@
+{
+  "manifest_version": "1.1.0",
+  "project": "MindBridge 2.0",
+  "generated_at": "2026-11-01",
+  "validation_summary": {
+    "hotlines_json_valid": true,
+    "total_hotline_contacts": 34,
+    "duplicate_hotline_ids": [],
+    "contacts_by_jurisdiction": {
+      "IN": 12,
+      "US": 5,
+      "UK": 4,
+      "CA": 5,
+      "AU": 4,
+      "GL": 4
+    },
+    "total_markdown_documents": 22,
+    "all_markdown_non_empty": true
+  },
+  "documents": [
+    {
+      "relative_path": "clinical_rubrics/01_gad7_anxiety_screening_overview.md",
+      "file_size_bytes": 2472,
+      "is_non_empty": true,
+      "title": "GAD-7 (Generalized Anxiety Disorder 7-Item Scale) Overview",
+      "source_organization": "Spitzer et al. (2006) / Primary Care Clinical Standards",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "GL",
+      "content_category": "clinical_rubrics",
+      "verification_status": "independently_verified"
+    },
+    {
+      "relative_path": "clinical_rubrics/02_phq9_mood_screening_overview.md",
+      "file_size_bytes": 4242,
+      "is_non_empty": true,
+      "title": "PHQ-9 (Patient Health Questionnaire 9-Item Scale) Overview",
+      "source_organization": "Kroenke et al. (2001) / Primary Care Clinical Standards",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "GL",
+      "content_category": "clinical_rubrics",
+      "verification_status": "independently_verified"
+    },
+    {
+      "relative_path": "clinical_rubrics/03_pss10_stress_scale_overview.md",
+      "file_size_bytes": 1989,
+      "is_non_empty": true,
+      "title": "PSS-10 (Perceived Stress Scale 10-Item) Overview",
+      "source_organization": "Cohen et al. (1983)",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "GL",
+      "content_category": "clinical_rubrics",
+      "verification_status": "independently_verified"
+    },
+    {
+      "relative_path": "clinical_rubrics/04_nimhans_triage_boundaries.md",
+      "file_size_bytes": 2422,
+      "is_non_empty": true,
+      "title": "NIMHANS Digital Triage Framework & Clinical Red Lines",
+      "source_organization": "NIMHANS Bengaluru & MoHFW",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html, 17_clinical_safety_data_sovereignty_dpdp_india.html",
+      "jurisdiction": "IN",
+      "content_category": "clinical_rubrics",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "cognitive_reframing/01_thought_court_catastrophizing.md",
+      "file_size_bytes": 2325,
+      "is_non_empty": true,
+      "title": "Cognitive Restructuring for Catastrophic Loops (Thought Court)",
+      "source_organization": "American Psychological Association (APA Division 12)",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "cognitive_reframing",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "cognitive_reframing/02_cbt_worry_postponement.md",
+      "file_size_bytes": 2316,
+      "is_non_empty": true,
+      "title": "De-escalating Racing Thoughts at Night: The CBT Worry Log",
+      "source_organization": "Cognitive Behavioral Therapy (CBT) Frameworks",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "IN",
+      "content_category": "cognitive_reframing",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "cognitive_reframing/03_behavioral_activation_inertia.md",
+      "file_size_bytes": 2110,
+      "is_non_empty": true,
+      "title": "Behavioral Activation for Depressive Inertia",
+      "source_organization": "APA Division 12 Handbook",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "cognitive_reframing",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "cognitive_reframing/04_polyvagal_social_engagement.md",
+      "file_size_bytes": 3959,
+      "is_non_empty": true,
+      "title": "The Social Engagement Framing: Theoretical Model for Emotional Grounding",
+      "source_organization": "Psychoeducational Somatic Frameworks (Adapted from Screen 04)",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "cognitive_reframing",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "cognitive_reframing/05_values_clarification_act.md",
+      "file_size_bytes": 2168,
+      "is_non_empty": true,
+      "title": "Values Clarification & Micro-Commitments",
+      "source_organization": "Acceptance & Commitment Therapy (ACT) Matrix",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "cognitive_reframing",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "legal_and_privacy/dpdp_and_mhca_statutory_reference.md",
+      "file_size_bytes": 9405,
+      "is_non_empty": true,
+      "title": "DPDP Act 2023 & MHCA 2017: Statutory Baseline, UI Claims Analysis & Engineering Governance",
+      "source_organization": "Gazette of India & MindBridge Architecture Specifications",
+      "original_content_location": "17_clinical_safety_data_sovereignty_dpdp_india.html, 06_safety_privacy_clinical_limitations.html",
+      "jurisdiction": "IN",
+      "content_category": "legal_and_privacy",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/01_exam_anxiety_resilience_india.md",
+      "file_size_bytes": 2282,
+      "is_non_empty": true,
+      "title": "Navigating Competitive Exam Anxiety: Familial Stakes & Panic",
+      "source_organization": "Clinical Child & Adolescent Psychology / Indian Academic Context",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "IN",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/02_tech_workplace_burnout.md",
+      "file_size_bytes": 2245,
+      "is_non_empty": true,
+      "title": "Burnout in India's Tech Corridors: Off-Clock Autonomy & Commute Recovery",
+      "source_organization": "Occupational Health Psychology",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "IN",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/03_cultural_family_boundaries.md",
+      "file_size_bytes": 2451,
+      "is_non_empty": true,
+      "title": "Cultural Dimensions of Family Boundaries: Respect Without Self-Silencing",
+      "source_organization": "Indian Interpersonal & Family Counseling Frameworks",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "IN",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/04_stimulus_control_insomnia_cbti.md",
+      "file_size_bytes": 2233,
+      "is_non_empty": true,
+      "title": "Stimulus Control Therapy for Insomnia (CBT-I)",
+      "source_organization": "Stanford Sleep Medicine Center / American Academy of Sleep Medicine",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/05_circadian_sleep_hygiene.md",
+      "file_size_bytes": 2176,
+      "is_non_empty": true,
+      "title": "Circadian Sleep Hygiene Checklist",
+      "source_organization": "Chronobiology & Behavioral Sleep Guidelines",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "IN",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "psychoeducation/06_academic_exam_stress_grounding.md",
+      "file_size_bytes": 3097,
+      "is_non_empty": true,
+      "title": "Managing Academic Stress and Exam Anxiety: Practical Study Planning & Coping",
+      "source_organization": "Educational Psychology & Student Counseling Frameworks",
+      "original_content_location": "student_mental_wellness_psychoeducation_global.html",
+      "jurisdiction": "GL",
+      "content_category": "psychoeducation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/01_box_breathing_4_4_4_4.md",
+      "file_size_bytes": 2217,
+      "is_non_empty": true,
+      "title": "Box Breathing (4-4-4-4 Parasympathetic Reset)",
+      "source_organization": "Autonomic Nervous System Regulation Frameworks",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "somatic_regulation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/02_pranayama_4_7_8_vagus.md",
+      "file_size_bytes": 3649,
+      "is_non_empty": true,
+      "title": "4-7-8 Paced Breathing & Pranayama: Optional Somatic Coping Technique",
+      "source_organization": "Integrative Medicine & Yogic Pacing Practices (Adapted from Screen 18)",
+      "original_content_location": "18_mental_wellness_resources_psychoeducation_india.html, 19_crisis_support_helplines_india_telemanas.html",
+      "jurisdiction": "IN",
+      "content_category": "somatic_regulation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/03_sensory_grounding_5_4_3_2_1.md",
+      "file_size_bytes": 2356,
+      "is_non_empty": true,
+      "title": "5-4-3-2-1 Sensory Orientation & Somatic Grounding",
+      "source_organization": "Somatic Trauma & De-escalation Protocol",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html, 02_crisis_protocol_regional_safety_hotlines.html, 18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "GL",
+      "content_category": "somatic_regulation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/04_progressive_muscle_relaxation.md",
+      "file_size_bytes": 2346,
+      "is_non_empty": true,
+      "title": "Progressive Muscle Relaxation (PMR) Protocol",
+      "source_organization": "Mayo Clinic PM&R / Harvard Health Publishing",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html, 18_mental_wellness_resources_psychoeducation_india.html",
+      "jurisdiction": "GL",
+      "content_category": "somatic_regulation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/05_physiological_sigh.md",
+      "file_size_bytes": 3344,
+      "is_non_empty": true,
+      "title": "The Physiological Sigh: Controlled Cyclic Respiration Technique",
+      "source_organization": "Stanford University Neurobiology (Balban et al.)",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "somatic_regulation",
+      "verification_status": "partially_verified"
+    },
+    {
+      "relative_path": "somatic_regulation/06_vagus_nerve_stimulation_tapping.md",
+      "file_size_bytes": 3718,
+      "is_non_empty": true,
+      "title": "Bilateral Somatic Tapping & Tactile Grounding: Non-Clinical Practice",
+      "source_organization": "Adapted from Screen 04 UI (Unverified 'Mayo Clinic PM&R' badge attribution)",
+      "original_content_location": "04_mental_wellness_resources_knowledge_base.html",
+      "jurisdiction": "GL",
+      "content_category": "somatic_regulation",
+      "verification_status": "unverified"
+    }
+  ]
+}

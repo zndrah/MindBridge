@@ -1,0 +1,181 @@
+# ==============================================================================
+# MindBridge 2.0 — Crisis Detection Model Training Configuration
+# Phase 4 Step 4.3: Kaggle GPU Training Pipeline Settings
+# ==============================================================================
+# NOTE: These hyperparameters represent initial baseline experimental settings
+# and are NOT assumed to be optimal. Hyperparameters will be empirically validated
+# and tuned on the validation set during experiment execution.
+#
+# CLINICAL SAFEGUARD NOTICE:
+# The binary target 'crisis_label' (0: Non-Crisis, 1: Crisis-Risk) is a dataset-derived
+# classification target and does NOT constitute a clinical diagnosis or a validated
+# suicide-risk assessment. Samples categorized as Non-Crisis (Normal, Depression,
+# Anxiety) may still involve psychological distress. Conversely, samples categorized
+# as Crisis-Risk (Suicidal) do not automatically indicate imminent danger.
+# Deterministic safety routing operates independently of this classifier.
+# ==============================================================================
+
+experiment:
+  name: "mindbridge_crisis_detector_roberta"
+  version: "0.2.0"
+  description: "Binary crisis risk detection fine-tuning with RoBERTa-base and ONNX CPU export"
+  status: "initial_experimental_design"
+  timestamp: "2026-11-01T19:48:00Z"
+  reproducibility_seed: 42
+  execution_platform:
+    target: "kaggle_notebook" # Exclusively targeting Kaggle Notebooks
+    gpu_targets:
+      - "NVIDIA Tesla T4"
+      - "NVIDIA Tesla T4 x 2"
+      - "NVIDIA Tesla P100"
+    kaggle_input_root: "/kaggle/input/"
+    kaggle_working_root: "/kaggle/working/"
+    export_archive_name: "mindbridge_crisis_model_deploy.zip"
+    requires_paid_api: false
+
+model:
+  architecture: "AutoModelForSequenceClassification"
+  primary_identifier: "roberta-base"
+  primary_revision: "main"
+  num_labels: 1 # Single logit output for BCEWithLogitsLoss
+  id2label:
+    0: "Non-Crisis"
+    1: "Crisis-Risk"
+  label2id:
+    "Non-Crisis": 0
+    "Crisis-Risk": 1
+  classifier_dropout: 0.1
+  hidden_dropout_prob: 0.1
+  attention_probs_dropout_prob: 0.1
+  # Lightweight alternative for extreme latency constraints:
+  fallback_identifier: "distilbert-base-uncased"
+  fallback_revision: "main"
+
+tokenizer:
+  identifier: "roberta-base"
+  revision: "main"
+  max_sequence_length: 256
+  padding_strategy: "max_length"
+  truncation_strategy: true
+  add_special_tokens: true
+  special_tokens:
+    bos_token: "<s>"
+    eos_token: "</s>"
+    pad_token: "<pad>"
+    unk_token: "<unk>"
+    mask_token: "<mask>"
+
+datasets:
+  root_dir: "data/processed"
+  train_filename: "train.csv"
+  val_filename: "val.csv"
+  test_filename: "test.csv"
+  local_paths:
+    train_path: "data/processed/train.csv"
+    val_path: "data/processed/val.csv"
+    test_path: "data/processed/test.csv"
+  kaggle_search_paths:
+    - "/kaggle/input"
+    - "data/processed"
+    - "."
+  text_column: "text"
+  label_column: "crisis_label"
+  original_status_column: "status"
+  unique_id_column: "unique_id"
+
+split_statistics:
+  train_samples: 33920
+  val_samples: 7269
+  test_samples: 7267
+  total_samples: 48456
+  split_ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+class_balance:
+  train_non_crisis_count: 26085
+  train_crisis_count: 7835
+  non_crisis_ratio: 0.769015
+  crisis_ratio: 0.230985
+  # Class weighting strategy: pos_weight = non_crisis_count / crisis_count
+  # Applied in BCEWithLogitsLoss to counter minority class undersampling
+  pos_weight: 3.329292
+  loss_type: "BCEWithLogitsLoss"
+
+training_hyperparameters:
+  random_seed: 42
+  num_train_epochs: 3
+  train_batch_size: 32
+  eval_batch_size: 64
+  gradient_accumulation_steps: 1
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-8
+  max_grad_norm: 1.0
+  lr_scheduler_type: "linear"
+  warmup_ratio: 0.10
+  fp16: true
+  dataloader_num_workers: 2
+  dataloader_pin_memory: true
+
+evaluation_and_checkpointing:
+  evaluation_strategy: "epoch"
+  save_strategy: "epoch"
+  save_total_limit: 2
+  load_best_model_at_end: true
+  metric_for_best_model: "val_pr_auc"
+  greater_is_better: true
+  checkpoint_dir: "/kaggle/working/best_checkpoint"
+  early_stopping:
+    enabled: true
+    early_stopping_patience: 2
+    early_stopping_threshold: 0.001
+  metrics_to_compute:
+    - "accuracy"
+    - "crisis_precision"
+    - "crisis_recall"
+    - "crisis_f1"
+    - "pr_auc"
+    - "roc_auc"
+    - "confusion_matrix"
+
+decision_threshold_calibration:
+  calibration_split: "val" # Strictly calibrated on validation set only
+  sweep_min: 0.10
+  sweep_max: 0.90
+  sweep_step: 0.02
+  default_baseline_threshold: 0.50
+  target_crisis_recall: 0.95
+  selection_criterion: "maximize_precision_subject_to_recall_ge_0.95"
+
+onnx_cpu_export:
+  export_filename: "roberta_crisis_detector.onnx"
+  quantized_filename: "roberta_crisis_detector_quantized.onnx"
+  opset_version: 17
+  input_names:
+    - "input_ids"
+    - "attention_mask"
+  output_names:
+    - "logits"
+  dynamic_axes:
+    input_ids:
+      0: "batch_size"
+      1: "sequence_length"
+    attention_mask:
+      0: "batch_size"
+      1: "sequence_length"
+    logits:
+      0: "batch_size"
+  quantization:
+    enabled: true
+    strategy: "dynamic_int8"
+    target_op_types:
+      - "MatMul"
+      - "Gemm"
+    weight_type: "QInt8"
+  numerical_verification:
+    max_absolute_error_tolerance: 1.0e-3
+    label_agreement_min_ratio: 0.999

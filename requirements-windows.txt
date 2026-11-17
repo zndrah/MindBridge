@@ -1,0 +1,28 @@
+# MindBridge 2.0 — Native Windows Dependencies
+# ==============================================================================
+# Sourced for Windows 10/11 x86_64 with CPU-only PyTorch and FAISS
+# ==============================================================================
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Core ML and Numerical Compute (Windows CPU Wheels)
+torch>=2.0.0
+numpy>=2.0.0
+transformers>=4.40.0
+tokenizers>=0.15.0
+faiss-cpu>=1.8.0
+
+# API and ASGI Web Services
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+httpx>=0.27.0
+
+# Data Processing and Web Scraping
+pandas>=3.1.0
+beautifulsoup4>=4.15.0
+
+# LLM Providers & Environment Configuration
+google-genai>=2.34.0
+groq>=1.7.0
+python-dotenv>=1.2.4

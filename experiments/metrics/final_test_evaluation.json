@@ -1,0 +1,53 @@
+{
+    "project": "MindBridge",
+    "model": "RoBERTa-base",
+    "dataset": "MindBridge curated mental-health dataset",
+    "best_epoch": 2,
+    "threshold": 0.509765625,
+    "test_samples": 7267,
+    "metrics": {
+        "accuracy": 0.9078023943855786,
+        "precision": 0.7608695652173914,
+        "recall": 0.8760429082240763,
+        "f1": 0.814404432132964,
+        "pr_auc": 0.8724743626018012,
+        "roc_auc": 0.9618814818226933
+    },
+    "confusion_matrix": [
+        [
+            5127,
+            462
+        ],
+        [
+            208,
+            1470
+        ]
+    ],
+    "classification_report": {
+        "Non-Crisis": {
+            "precision": 0.9610121836925961,
+            "recall": 0.917337627482555,
+            "f1-score": 0.9386671548883193,
+            "support": 5589.0
+        },
+        "Crisis-Risk": {
+            "precision": 0.7608695652173914,
+            "recall": 0.8760429082240763,
+            "f1-score": 0.814404432132964,
+            "support": 1678.0
+        },
+        "accuracy": 0.9078023943855786,
+        "macro avg": {
+            "precision": 0.8609408744549938,
+            "recall": 0.8966902678533156,
+            "f1-score": 0.8765357935106417,
+            "support": 7267.0
+        },
+        "weighted avg": {
+            "precision": 0.9147978842841205,
+            "recall": 0.9078023943855786,
+            "f1-score": 0.9099740423544695,
+            "support": 7267.0
+        }
+    }
+}

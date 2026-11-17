@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#171d1a","surface-container-highest":"#dee4df","background":"#f5fbf6","on-tertiary":"#ffffff","secondary-fixed-dim":"#9cd1ca","on-secondary-fixed":"#00201d","on-secondary-container":"#3a6d67","secondary":"#346761","outline":"#727974","outline-variant":"#c1c8c2","surface-container":"#e9efea","error":"#ba1a1a","primary-fixed-dim":"#a9cfbb","on-primary-container":"#c3ead5","surface-container-low":"#eff5f0","on-error-container":"#93000a","on-surface-variant":"#414844","on-tertiary-container":"#ffdab9","tertiary-container":"#7e5d3c","tertiary-fixed-dim":"#e9bf97","inverse-on-surface":"#ecf2ed","on-error":"#ffffff","primary-container":"#486b5a","inverse-surface":"#2c322f","surface-variant":"#dee4df","on-primary-fixed-variant":"#2b4d3e","on-secondary-fixed-variant":"#184f4a","error-container":"#ffdad6","tertiary":"#634627","primary-fixed":"#c5ebd6","inverse-primary":"#a9cfbb","surface-dim":"#d6dbd7","surface-tint":"#436655","surface-container-lowest":"#ffffff","surface":"#f5fbf6","surface-container-high":"#e4eae5","on-tertiary-fixed":"#2c1600","on-surface":"#171d1a","secondary-container":"#b7ede6","secondary-fixed":"#b7ede6","surface-bright":"#f5fbf6","tertiary-fixed":"#ffdcbd","primary":"#305343","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5e4122","on-primary":"#ffffff","on-primary-fixed":"#002115"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-mobile":"1.25rem","space-md":"1rem","space-xs":"0.25rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin":"3rem","gutter-mobile":"1rem","gutter":"1.5rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"display-mobile":["Newsreader"],"display":["Newsreader"],"headline-lg-mobile":["Newsreader"],"headline-lg":["Newsreader"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Newsreader"],"headline-md":["Newsreader"],"label-md":["Plus Jakarta Sans"]},fontSize:{"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"display-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.015em",fontWeight:"400"}],"display":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.015em",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"headline-md":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"500"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-low px-gutter py-space-xs text-center"><div class="max-w-[1180px] mx-auto flex items-center justify-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-base">info</span><p class="font-label-sm text-label-sm text-on-surface-variant">Non-clinical emotional first response • If in crisis, call emergency services (<span class="text-primary font-semibold">988 US/CA</span>)</p></div></div><div class="h-16 px-gutter flex items-center justify-between max-w-[1180px] mx-auto"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" href="#"><img alt="MindBridge 2.0 Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XflJRAwFfSJ3zPOGV6IegxMZ9OLfhLeF1Hqddr-4Yk7msqoJ-p2HOsQWjjdr4H_zQimz5a_PFnvyyu8B0wlpWAfaFdEF19JYE2W0LdBD3GEPKRfqmUCRlsnJ30Np4KLf9tRlgfYFDZT82d-8xL4M-asq0SWuVXiYvmmOSfy83OoC1wJppkO_-fzHGqhubxy5pmyttGllvRh0IVBMHkCli4ooR9i51gdH5rRv0fC9Ln7Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">MindBridge</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">2.0 Safe Harbor</span></div></a><nav class="hidden md:flex items-center gap-space-xs ml-space-md" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="chat-assistant" href="#">Chat Assistant</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="safety-protocols" href="#">Safety Protocols</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="how-it-works" href="#">How it Works</a></nav></div><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-error-container text-on-error-container font-label-md text-label-md hover:bg-error hover:text-on-error transition-all shadow-[0_2px_8px_-2px_rgba(35,41,38,0.04)]" data-path="safety-protocols" href="#"><span class="material-symbols-outlined text-base">crisis_alert</span><span>Need Immediate Help?</span></a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu0D5MHx1hFpEe_KhmAidWBSGjmXo_3vZzvO1Ok03n1iQOxN4a7r2JpsGCtf4YgvtWHAOiulFQLVp8cmHqWSrI4vgZ8XFRJ0S5J-63vHuhgoAn_1sYPRsau3sCIe_74RnM_P3ilKWuSz05sE_OKe1U05PHtRYPeK6uuP7TajwJ-3wp5Ek2Im7ilWY3h3Sz_UZfWrVKkkzvoizlZqewQGpKMQaMYWL2XCzM-jBR9Vzm"/></div></div></div></header><main class="w-full pt-24 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Key Trust / Boundary Callout Banner -->
+<section class="w-full px-gutter py-space-sm bg-surface-container-low">
+<div class="max-w-[1180px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-base shrink-0">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="font-label-sm text-label-sm text-on-surface uppercase tracking-wide">First-Response Companion •</strong> MindBridge is an emotional first-response tool, not clinical therapy, psychiatric diagnosis, or an emergency service. Your session details remain strictly private.
+        </p>
+</div>
+<a class="shrink-0 font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors inline-flex items-center gap-1 font-semibold" href="#boundaries">
+        Read our ethics pledge
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Editorial Warm Hero -->
+<section class="w-full px-gutter pt-space-xl pb-space-xl">
+<div class="max-w-[1180px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Editorial Typography & Tone -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Safe Harbor • Version 2.0</span>
+</div>
+<h1 class="font-display text-display text-primary tracking-tight text-balance">
+          A grounded first-response for emotional moments.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[620px] leading-relaxed">
+          Empathetic, non-clinical AI support grounded in evidence-backed coping practices when you need to pause, breathe, or reflect. Here to companion your stillness without judgment.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 group" href="#interactive-preview">
+<span>Start a Conversation</span>
+<span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-full bg-surface-container-high text-secondary font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" href="#grounding-methods">
+<span class="material-symbols-outlined text-lg">spa</span>
+<span>Explore Safety &amp; Grounding</span>
+</a>
+</div>
+<!-- Micro Social Proof / Gentle Metric -->
+<div class="flex items-center gap-space-lg pt-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">0 ms</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Persistent Session Storage</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Peer-Reviewed Coping Roots</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary">988</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Human Lifeline Linked</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Anchor & Serene Editorial Imagery -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden bg-surface-container shadow-xl">
+<img class="w-full h-[460px] object-cover" data-alt="Soft morning sunlight pouring over a minimalist Japanese ceramic tea bowl and smooth river pebbles on an unstained light ash wood table, warm muted sage tones, organic tranquility, shallow depth of field, gentle atmospheric haze, peaceful editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz3Bu0IfvqRoF8fRWmbOQPUsoZC12WWDNy3Bbwy9ZNEuZMXPMs3bgPj9ARpmhzsmFN2LH0Wh2bBOry8YW8ccp_d4rkPE0u29SdlKqgrhFLLfhpSyP0efw9W_DI3LSTkaOgT-FexOYbg-Im-rrTsjY8kcjk7KinBIm2NF38dKk84sOcuSnyueif5dUYUzYHfbzDWjzjL29ILZrYPFnzMjpAGkVJFp-80g1POqzA_X22"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent flex flex-col justify-end p-space-lg">
+<span class="font-label-sm text-label-sm text-inverse-on-surface uppercase tracking-wider">Mindful Affirmation</span>
+<p class="font-headline-sm text-headline-sm text-inverse-on-surface italic mt-1">
+              “You do not need to solve the entire storm today. Just stay anchored right now.”
+            </p>
+</div>
+</div>
+<!-- Overlapping Ambient Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex items-center gap-space-md max-w-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">air</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Box Breathing Pacer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4s Inhale • 4s Hold • 4s Exhale</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Thoughtful Feature Highlights: 3-Column Architecture -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-low" id="grounding-methods">
+<div class="max-w-[1180px] mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="max-w-xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Thoughtful Frameworks</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">
+            Practices rooted in nervous system regulation.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          MindBridge blends clinical psychology modalities with instantaneous, gentle conversational pacing to guide you through distress.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Feature Card 1 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">self_improvement</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grounded Coping Techniques</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Step-by-step physical and sensory interventions structured to interrupt panic spirals and stimulate the parasympathetic nervous system.
+            </p>
+<div class="mt-space-md flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Tactile 5-4-3-2-1 Sensory Grounding</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Cadenced Physiological Sigh Pacing</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Cognitive Reframing Pauses</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Technique Engine</span>
+<span class="material-symbols-outlined text-base">psychology</span>
+</div>
+</div>
+<!-- Feature Card 2 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Evidence-Backed References</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Transparent, accountable insights drawn directly from established Dialectical Behavior Therapy (DBT), somatic experiencing, and mindfulness research.
+            </p>
+<div class="mt-space-md flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">DBT TIPP Distress Tolerance protocols</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Interactive micro-citations for prompts</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Vetted by licensed clinical consultants</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Curated Citations</span>
+<span class="material-symbols-outlined text-base">verified</span>
+</div>
+</div>
+<!-- Feature Card 3 -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">shield_with_heart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Safety-First Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+              Real-time sentiment and language classification monitors intent. If acute self-harm or distress signals are recognized, immediate human escalation intervenes.
+            </p>
+<div class="mt-space-md flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Instantaneous 988 lifeline bridge</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Zero clinical illusion or pseudo-diagnosis</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="font-body-sm text-body-sm">Dedicated warm-transfer contact cards</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Triage Integrity</span>
+<span class="material-symbols-outlined text-base">lock</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Mini Conversation Preview -->
+<section class="w-full px-gutter py-space-xl" id="interactive-preview">
+<div class="max-w-[840px] mx-auto flex flex-col items-center">
+<div class="text-center mb-space-lg max-w-lg">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Unrushed &amp; Ambient</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">
+          Experience the cadence of calm.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Interact with a live simulation to observe how MindBridge listens, holds space, and suggests gentle grounding.
+        </p>
+</div>
+<!-- Simulator Device Frame -->
+<div class="w-full bg-surface-container rounded-3xl p-space-md sm:p-space-lg shadow-xl flex flex-col gap-space-md">
+<!-- Chat Header Meta -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg">anchor</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">MindBridge Harbor</p>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Here with you • Non-recording</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors flex items-center gap-1" id="resetDemoBtn">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Simulated Dialogue Stream -->
+<div class="flex flex-col gap-space-md max-h-[380px] overflow-y-auto pr-1" id="chatStream">
+<!-- AI Message 1 -->
+<div class="flex items-start gap-space-sm max-w-[85%]">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm">filter_vintage</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl rounded-tl-sm p-space-md shadow-sm">
+<p class="font-headline-sm text-headline-sm text-primary mb-1">Take a slow, gentle breath.</p>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Welcome. There is nothing you have to explain or get right here. Whatever weight you are carrying right now is allowed to rest. How are you feeling physically in this moment?
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">DBT Distress Tolerance • Grounding Phase</span>
+</div>
+</div>
+<!-- User Message 1 -->
+<div class="flex items-start justify-end gap-space-sm max-w-[85%] ml-auto">
+<div class="bg-primary-container text-on-primary rounded-2xl rounded-tr-sm p-space-md shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                My chest feels tight and my mind won't stop racing with deadlines. I feel completely overwhelmed.
+              </p>
+<span class="font-label-sm text-label-sm text-on-primary-container block mt-1 text-right">Just now</span>
+</div>
+</div>
+<!-- AI Message 2 -->
+<div class="flex items-start gap-space-sm max-w-[85%]">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm">filter_vintage</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl rounded-tl-sm p-space-md shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                I hear you, and it makes complete sense that your body is holding tension when demands feel stacked up. We do not need to tackle any deadlines right this second.
+              </p>
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-xl">
+<p class="font-label-md text-label-md text-secondary font-semibold">Immediate Micro-Step:</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Let your shoulders drop away from your ears by half an inch. Feel both feet resting heavily against the floor.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Simulated Chip Suggestions -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to respond calmly:</span>
+<div class="flex flex-wrap gap-space-xs" id="chipContainer">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors shadow-sm" onclick="handleSimulatorClick('Lead me through a 2-minute breathing exercise.', 'breathing')">
+              “Lead me through a breathing exercise”
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors shadow-sm" onclick="handleSimulatorClick('Can we do the 5-4-3-2-1 sensory method?', 'sensory')">
+              “Guide 5-4-3-2-1 grounding”
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-secondary-fixed transition-colors shadow-sm" onclick="handleSimulatorClick('I just need you to listen for a moment.', 'listen')">
+              “Just listen to me vent”
+            </button>
+</div>
+</div>
+<!-- Simulated Input Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-sm flex items-center gap-space-sm shadow-inner">
+<span class="material-symbols-outlined text-secondary ml-space-xs">chat_bubble</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface focus:outline-none placeholder:text-outline-variant" id="chatSimulatorInput" placeholder="Type how you are feeling or choose an option above..." type="text"/>
+<button class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 hover:bg-primary transition-colors" id="sendSimulatorBtn">
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Physiological Pacer Section -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-low">
+<div class="max-w-[1180px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Somatic Breathing Tool</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Lower cortisol with the Physiological Sigh.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Discovered in neuroscience research at Stanford, two quick inhalations followed by an elongated sighing exhalation is the fastest autonomic reset for heart rate variability.
+        </p>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold mt-0.5">1</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Deep Inhale Through Nose</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fill the lower lungs smoothly over 3 seconds.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold mt-0.5">2</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Secondary Sharp Sip of Air</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Re-inflate collapsed alveoli in the upper lungs.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold mt-0.5">3</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Extended Mouth Exhale</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Exhale twice as long as the inhale to activate vagal calming.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Breathing Visualizer Widget -->
+<div class="lg:col-span-6 flex flex-col items-center justify-center">
+<div class="w-full max-w-[420px] bg-surface-container-lowest rounded-3xl p-space-xl shadow-lg flex flex-col items-center text-center">
+<div class="relative w-48 h-48 flex items-center justify-center my-space-md">
+<!-- Pulsing Organic Ring -->
+<div class="absolute w-36 h-36 rounded-full bg-secondary-fixed opacity-70 transition-all duration-1000 ease-in-out" id="pacerRing"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold" id="pacerLabel">Inhale</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1" id="pacerTimer">4s remaining</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Follow the gentle rhythm to stabilize heart rate.
+          </p>
+<button class="px-space-lg py-space-xs rounded-full bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-colors shadow-sm" id="togglePacerBtn">
+            Pause Pacer
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust, Architecture & Ethics Section -->
+<section class="w-full px-gutter py-space-xl" id="boundaries">
+<div class="max-w-[1180px] mx-auto flex flex-col gap-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Ethical Engineering</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs">
+          Built on boundaries, consent, and zero data exploitation.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+          Emotional vulnerability demands digital sovereignty. Our lightweight FastAPI backend guarantees non-retention of your intimate thoughts.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Ethics Card 1 -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-2xl mb-space-sm">memory</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ephemeral Memory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Sessions run in secure, stateless memory. Closing your tab immediately flushes the interaction pipeline.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-md">Zero Ad Profile Tracking</span>
+</div>
+<!-- Ethics Card 2 -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-2xl mb-space-sm">vpn_key</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">End-to-End Cryptography</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              Direct TLS 1.3 encrypted handshakes between your browser and our hardened inference workers.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-md">Zero Plaintext Logging</span>
+</div>
+<!-- Ethics Card 3 -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-2xl mb-space-sm">emergency_home</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Clear Clinical Guardrails</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              We never impersonate doctors or counselors. MindBridge refuses diagnosing and respects boundaries.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-md">Always Transparent</span>
+</div>
+<!-- Ethics Card 4 -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-2xl mb-space-sm">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Audited FastAPI Core</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              High-throughput, lightweight asynchronous Python backend crafted for safety validation audits.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-md">Open Protocol Standards</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Crisis Safety Card: Dedicated Grounded Ochre Component -->
+<section class="w-full px-gutter pb-space-xl">
+<div class="max-w-[1180px] mx-auto bg-surface-container-high rounded-3xl p-space-lg md:p-space-xl shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-1">
+              Human Care Available 24/7
+            </div>
+<h3 class="font-headline-md text-headline-md text-tertiary tracking-tight">
+              In acute emotional distress or thoughts of harm?
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              AI cannot replace compassionate human crisis workers. You deserve to talk with someone who cares right now. Free, completely confidential, and always awake.
+            </p>
+</div>
+</div>
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm w-full lg:w-auto">
+<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg hover:bg-tertiary-container transition-all shadow-md" href="tel:988">
+<span class="material-symbols-outlined text-base">call</span>
+<span>Dial or Text 988 (US/CA)</span>
+</a>
+<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-container-lowest text-tertiary font-label-lg text-label-lg hover:bg-surface-container transition-colors shadow-sm" href="sms:741741">
+<span class="material-symbols-outlined text-base">sms</span>
+<span>Text 'HOME' to 741741</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Comprehensive Warm Grounded Footer -->
+<footer class="w-full bg-surface-container-high px-gutter pt-space-xl pb-space-lg">
+<div class="max-w-[1180px] mx-auto flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl">
+<!-- Col 1: Brand & Purpose -->
+<div class="md:col-span-5 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-base">anchor</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">MindBridge 2.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1 leading-relaxed">
+            A quiet sanctuary when the world feels too loud. Providing emotional decompression, psychological grounding, and safe onward connections.
+          </p>
+<div class="pt-space-xs flex items-center gap-space-sm text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">lock_clock</span>
+<span>Zero-Knowledge Serverless Architecture</span>
+</div>
+</div>
+<!-- Col 2: Global Helplines -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Immediate Crisis Lines</p>
+<div class="flex flex-col gap-1.5 mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">United States &amp; Canada:</strong> Dial <span class="font-semibold text-primary">988</span> (24/7)</p>
+<p><strong class="text-on-surface">United Kingdom:</strong> Dial <span class="font-semibold text-primary">111</span> or Samaritans at <span class="font-semibold text-primary">116 123</span></p>
+<p><strong class="text-on-surface">Australia:</strong> Lifeline at <span class="font-semibold text-primary">13 11 14</span></p>
+<p><strong class="text-on-surface">Crisis Text Line:</strong> Text HOME to <span class="font-semibold text-primary">741741</span></p>
+<p><strong class="text-on-surface">The Trevor Project (LGBTQ+):</strong> Dial <span class="font-semibold text-primary">1-866-488-7386</span></p>
+</div>
+</div>
+<!-- Col 3: Principles & Integrity -->
+<div class="md:col-span-3 flex flex-col gap-space-xs">
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Policies &amp; Ethical Scope</p>
+<ul class="flex flex-col gap-2 mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Clinical Scope Disclaimer</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Non-Retention Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Emergency Protocol Standards</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">DBT &amp; Somatic Methodology</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Community Safety Guidelines</a></li>
+</ul>
+</div>
+</div>
+<!-- Legal / Medical Disclaimer Box -->
+<div class="p-space-md bg-surface-container rounded-2xl">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="font-label-sm text-label-sm text-on-surface uppercase">Medical &amp; Clinical Disclaimer:</strong> MindBridge is an AI-powered conversational support utility developed for general grounding, self-reflection, and distress de-escalation. MindBridge does NOT offer medical advice, psychiatric diagnostic evaluations, clinical treatment plans, or psychotherapy. Utilizing this tool does not create a therapist-patient relationship. If you are experiencing a severe psychiatric crisis, domestic violence, or life-threatening situation, please step away from this screen immediately and contact regional emergency medical authorities or the nearest hospital.
+        </p>
+</div>
+<!-- Final Copyright & Stamp -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<p>© 2025 MindBridge Safe Harbor. All rights reserved.</p>
+<p class="flex items-center gap-1">
+<span>Crafted with gentle intent • Certified for Non-Clinical First Response</span>
+</p>
+</div>
+</div>
+</footer>
+</div>
+<!-- Inline Interactive Script for Breathing Pacer & Conversation Simulator -->
+<script>
+  // 1. Interactive Pacer Engine
+  (function initPacer() {
+    let phase = 0; // 0: inhale, 1: hold, 2: exhale
+    let timerVal = 4;
+    let isRunning = true;
+    const ring = document.getElementById('pacerRing');
+    const label = document.getElementById('pacerLabel');
+    const timerText = document.getElementById('pacerTimer');
+    const toggleBtn = document.getElementById('togglePacerBtn');
+
+    if (!ring || !label || !timerText || !toggleBtn) return;
+
+    const phases = [
+      { name: 'Inhale Slowly', duration: 4, scale: 'scale-125 bg-primary-fixed', op: 'opacity-90' },
+      { name: 'Gently Hold', duration: 4, scale: 'scale-125 bg-secondary-fixed', op: 'opacity-70' },
+      { name: 'Long Exhale', duration: 6, scale: 'scale-75 bg-surface-container-highest', op: 'opacity-50' }
+    ];
+
+    function step() {
+      if (!isRunning) return;
+      
+      const current = phases[phase];
+      label.textContent = current.name;
+      timerText.textContent = timerVal + 's remaining';
+
+      ring.className = 'absolute w-36 h-36 rounded-full transition-all duration-1000 ease-in-out ' + current.scale + ' ' + current.op;
+
+      timerVal--;
+
+      if (timerVal < 0) {
+        phase = (phase + 1) % phases.length;
+        timerVal = phases[phase].duration;
+      }
+    }
+
+    const interval = setInterval(step, 1000);
+    step();
+
+    toggleBtn.addEventListener('click', function() {
+      isRunning = !isRunning;
+      if (isRunning) {
+        toggleBtn.textContent = 'Pause Pacer';
+        step();
+      } else {
+        toggleBtn.textContent = 'Resume Pacer';
+        label.textContent = 'Paused';
+        timerText.textContent = 'Rest when ready';
+      }
+    });
+  })();
+
+  // 2. Chat Simulator Logic
+  const simulatorReplies = {
+    breathing: {
+      user: "Lead me through a 2-minute breathing exercise.",
+      ai: "Let's do this together. Take a slow breath in through your nose for 4 counts... 1, 2, 3, 4. Now gently pause. Let it out through softly parted lips for 6 counts. Feel your hands relax. Repeat this three times with me."
+    },
+    sensory: {
+      user: "Can we do the 5-4-3-2-1 sensory method?",
+      ai: "Wonderful choice. Wherever you are sitting right now, name 5 distinct things your eyes can see. A shadow, the grain of a desk, a window frame. Tell me one thing you see."
+    },
+    listen: {
+      user: "I just need you to listen for a moment.",
+      ai: "I am completely here. No advice, no rush to fix anything. Take as many sentences as you need, or just share fragments. What is the heaviest thing on your mind?"
+    }
+  };
+
+  function appendChat(role, message) {
+    const stream = document.getElementById('chatStream');
+    if (!stream) return;
+
+    const div = document.createElement('div');
+    if (role === 'user') {
+      div.className = 'flex items-start justify-end gap-space-sm max-w-[85%] ml-auto animate-fade-in';
+      div.innerHTML = `
+        <div class="bg-primary-container text-on-primary rounded-2xl rounded-tr-sm p-space-md shadow-sm">
+          <p class="font-body-md text-body-md leading-relaxed">${message}</p>
+          <span class="font-label-sm text-label-sm text-on-primary-container block mt-1 text-right">Just now</span>
+        </div>
+      `;
+    } else {
+      div.className = 'flex items-start gap-space-sm max-w-[85%] animate-fade-in';
+      div.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center shrink-0 mt-1">
+          <span class="material-symbols-outlined text-sm">filter_vintage</span>
+        </div>
+        <div class="bg-surface-container-lowest rounded-2xl rounded-tl-sm p-space-md shadow-sm">
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">${message}</p>
+          <span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">MindBridge Safe Presence</span>
+        </div>
+      `;
+    }
+    stream.appendChild(div);
+    stream.scrollTop = stream.scrollHeight;
+  }
+
+  function handleSimulatorClick(text, type) {
+    appendChat('user', text);
+    const chipContainer = document.getElementById('chipContainer');
+    if (chipContainer) chipContainer.style.opacity = '0.5';
+
+    setTimeout(() => {
+      if (simulatorReplies[type]) {
+        appendChat('ai', simulatorReplies[type].ai);
+      } else {
+        appendChat('ai', "I hear how much is present for you right now. Take your time, breathe out, and know that you are safe in this quiet space.");
+      }
+      if (chipContainer) chipContainer.style.opacity = '1';
+    }, 600);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('chatSimulatorInput');
+    const sendBtn = document.getElementById('sendSimulatorBtn');
+    const resetBtn = document.getElementById('resetDemoBtn');
+
+    function sendManual() {
+      if (!input || !input.value.trim()) return;
+      const text = input.value.trim();
+      input.value = '';
+      appendChat('user', text);
+
+      setTimeout(() => {
+        appendChat('ai', "Thank you for sharing that with me. Even putting feelings into words asks something of you. What would feel most comforting in the next few minutes?");
+      }, 700);
+    }
+
+    if (sendBtn) sendBtn.addEventListener('click', sendManual);
+    if (input) {
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') sendManual();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        const stream = document.getElementById('chatStream');
+        if (!stream) return;
+        stream.innerHTML = `
+          <div class="flex items-start gap-space-sm max-w-[85%]">
+            <div class="w-7 h-7 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center shrink-0 mt-1">
+              <span class="material-symbols-outlined text-sm">filter_vintage</span>
+            </div>
+            <div class="bg-surface-container-lowest rounded-2xl rounded-tl-sm p-space-md shadow-sm">
+              <p class="font-headline-sm text-headline-sm text-primary mb-1">Take a slow, gentle breath.</p>
+              <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Welcome. There is nothing you have to explain or get right here. Whatever weight you are carrying right now is allowed to rest. How are you feeling physically in this moment?
+              </p>
+              <span class="font-label-sm text-label-sm text-on-surface-variant block mt-2">DBT Distress Tolerance &bull; Grounding Phase</span>
+            </div>
+          </div>
+        `;
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1180px] mx-auto px-gutter py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">MindBridge</span><span class="font-body-sm text-body-sm text-on-surface-variant">— Empathetic companion &amp; first-line support.</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" data-path="safety-protocols" href="#">Immediate Resources</a><a class="hover:text-primary transition-colors" href="#">Privacy &amp; Consent</a><a class="hover:text-primary transition-colors" href="#">Clinical Scope Disclaimer</a></div></div></footer></body></html>

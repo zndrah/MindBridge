@@ -1,0 +1,104 @@
+# ============================================================
+# MindBridge 2.0 — .gitignore
+# ============================================================
+
+# 1. Python Environment & Caches
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 2. Environment Variables & Secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+
+# 3. Model Weights & Large Checkpoints (too large for GitHub)
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.gguf
+*.zip
+*.tar.gz
+*.7z
+release/
+models/crisis_detector/*
+!models/crisis_detector/.gitkeep
+models/embeddings/*
+!models/embeddings/.gitkeep
+models/fine_tuned_llm/*
+!models/fine_tuned_llm/.gitkeep
+
+# 4. Vector Stores & FAISS Indexes (auto-generated)
+*.faiss
+*.index
+*.pkl
+data/knowledge_base/faiss_index/*
+!data/knowledge_base/faiss_index/.gitkeep
+data/knowledge_base/counselchat_faiss_index/*
+!data/knowledge_base/counselchat_faiss_index/.gitkeep
+
+# 5. Raw & Processed Datasets (keep structure)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/evaluation/*
+!data/evaluation/.gitkeep
+data/experimental/*
+!data/experimental/.gitkeep
+
+# 6. Runtime & Logs
+logs/
+*.log
+.run/
+.setup_completed
+
+# 7. Node.js
+node_modules/
+frontend/dist/
+
+# 8. OS & IDE Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 9. Misc dev/debug files
+*.bak
+uv.lock

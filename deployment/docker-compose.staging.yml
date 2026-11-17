@@ -1,0 +1,88 @@
+# MindBridge 2.0 - Reproducible Staging Deployment Compose Stack
+# ==============================================================
+# Usage:
+#   docker compose -f deployment/docker-compose.staging.yml up -d
+#
+# Key Invariants:
+# 1. Non-root container execution (UID 10001).
+# 2. Strict single-worker backend (WEB_CONCURRENCY=1) to ensure in-memory
+#    rate limiting and concurrency semaphores are globally authoritative.
+# 3. Narrow private network (172.28.0.0/16) for trusted reverse-proxy verification.
+#    Rejects overly broad networks such as 10.0.0.0/8.
+# 4. Zero embedded secrets.
+# 5. Native health check probes on all services.
+
+services:
+  mindbridge-backend:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: mindbridge-staging-backend
+    user: "10001:10001"
+    restart: unless-stopped
+    environment:
+      - APP_ENV=staging
+      - DEBUG=false
+      - HOST=0.0.0.0
+      - PORT=8000
+      - WEB_CONCURRENCY=1
+      - RATE_LIMIT_PER_MINUTE=60
+      - MAX_CONCURRENT_REQUESTS=10
+      - TRUSTED_PROXIES=127.0.0.1,::1,172.28.0.0/16
+      - DEFAULT_JURISDICTION=GL
+      - CRISIS_PROBABILITY_THRESHOLD=0.509765625
+      - SAFE_DEGRADATION_ON_ERROR=true
+      - MAX_BODY_SIZE_BYTES=65536
+      - ALLOWED_ORIGINS=http://localhost,http://localhost:8080,http://127.0.0.1:8080,http://localhost:8081,http://127.0.0.1:8081
+    networks:
+      staging_net:
+        ipv4_address: 172.28.0.10
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4096M
+        reservations:
+          cpus: '1.0'
+          memory: 2048M
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request, sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).getcode() == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 3
+
+  mindbridge-reverse-proxy:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.frontend
+    container_name: mindbridge-staging-proxy
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    depends_on:
+      mindbridge-backend:
+        condition: service_healthy
+    networks:
+      staging_net:
+        ipv4_address: 172.28.0.2
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+networks:
+  staging_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+          gateway: 172.28.0.1

@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-surface: #f5fbf6;
+    --color-surface-dim: #d6dbd7;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #eff5f0;
+    --color-surface-container: #e9efea;
+    --color-surface-container-high: #e4eae5;
+    --color-surface-container-highest: #dee4df;
+    --color-on-surface: #171d1a;
+    --color-on-surface-variant: #414844;
+    --color-primary: #305343;
+    --color-primary-container: #486b5a;
+    --color-secondary: #346761;
+    --color-tertiary: #634627;
+    --color-error: #ba1a1a;
+    --color-outline: #727974;
+    --color-outline-variant: #c1c8c2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #f5fbf6;
+    color: #171d1a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+  }
+}
+
+/* Custom subtle scrollbar for calming aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c8c2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #727974;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

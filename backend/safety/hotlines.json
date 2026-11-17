@@ -1,0 +1,820 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "project": "MindBridge 2.0",
+  "description": "Structured emergency contacts extracted from MindBridge Stitch UI screens (Screens 02 and 19). Operational availability, live telephony pickup, and queue status have NOT been independently verified. URLs distinguish original screen links from editorial enrichments.",
+  "extracted_date": "2026-11-01",
+  "jurisdictions": {
+    "IN": {
+      "country_name": "India",
+      "statutory_context": "Mental Healthcare Act 2017 & DPDP Act 2023",
+      "emergency_dispatch": [
+        {
+          "resource_id": "in-national-emergency-112",
+          "resource_name": "National Emergency Response Support System (ERSS)",
+          "authority": "Ministry of Home Affairs, Government of India",
+          "telephone": "112",
+          "alternate_telephone": null,
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://112.gov.in",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Unified emergency dispatch for police, fire, and ambulance across India. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "in-ambulance-102",
+          "resource_name": "National Ambulance Service",
+          "authority": "Ministry of Health and Family Welfare (MoHFW), Government of India",
+          "telephone": "102",
+          "alternate_telephone": null,
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": null,
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Dedicated public ambulance dispatch for medical emergencies. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": null
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "in-tele-manas",
+          "resource_name": "Tele-MANAS (Tele Mental Health Assistance and Networking Across States)",
+          "authority": "Ministry of Health & Family Welfare (MoHFW) / Coordinated by NIMHANS Bengaluru & IIIT Bangalore",
+          "telephone": "14416",
+          "alternate_telephone": "1800-891-4416",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "languages": [
+            "Hindi",
+            "English",
+            "Tamil",
+            "Telugu",
+            "Bengali",
+            "Marathi",
+            "Gujarati",
+            "Kannada",
+            "Odia",
+            "Malayalam",
+            "Assamese",
+            "Punjabi",
+            "Urdu",
+            "Regional Indian Languages (20+)"
+          ],
+          "official_url": "https://telemanas.mohfw.gov.in",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Apex national mental health helpline connecting to regional cells across all 36 States and UTs with psychiatric escalation workflows. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "in-kiran",
+          "resource_name": "KIRAN Mental Health Rehabilitation Helpline",
+          "authority": "Department of Empowerment of Persons with Disabilities (DEPwD), Ministry of Social Justice & Empowerment",
+          "telephone": "1800-599-0019",
+          "alternate_telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "languages": [
+            "Hindi",
+            "English",
+            "Tamil",
+            "Telugu",
+            "Kannada",
+            "Malayalam",
+            "Gujarati",
+            "Marathi",
+            "Odia",
+            "Bengali",
+            "Assamese",
+            "Punjabi",
+            "Urdu"
+          ],
+          "official_url": null,
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Dedicated psychological first aid, crisis de-escalation, anxiety, depression, and mental health rehabilitation referral. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": null
+        },
+        {
+          "resource_id": "in-vandrevala",
+          "resource_name": "Vandrevala Foundation for Mental Health",
+          "authority": "Vandrevala Foundation (Clinical Non-Profit)",
+          "telephone": "+91 9999 666 555",
+          "alternate_telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "whatsapp"
+          ],
+          "availability": "24/7",
+          "toll_free": false,
+          "languages": [
+            "English",
+            "Hindi",
+            "Major Indian Languages"
+          ],
+          "official_url": "https://www.vandrevalafoundation.com",
+          "whatsapp_url": "https://wa.me/919999666555?text=Hello%20I%20am%20seeking%20mental%20health%20support",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Free tele-counseling and distress de-escalation nationwide provided by clinical psychologists. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "in-aasra",
+          "resource_name": "AASRA Suicide Prevention & Crisis Intervention",
+          "authority": "AASRA (Non-Profit NGO, Mumbai)",
+          "telephone": "+91 98204 66726",
+          "alternate_telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": false,
+          "languages": [
+            "English",
+            "Hindi"
+          ],
+          "official_url": "http://www.aasra.info",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Non-judgmental, confidential emotional support for individuals experiencing acute despair, solitary distress, or suicidal ideation. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "secondary_hospital_facilities": [
+        {
+          "resource_id": "in-hosp-nimhans",
+          "resource_name": "NIMHANS (National Institute of Mental Health and Neurosciences) — 24/7 Casualty",
+          "authority": "Autonomous Institute under MoHFW, Government of India",
+          "telephone": "080-26995000",
+          "location_address": "Hosur Road, Lakkasandra, Bengaluru, Karnataka • PIN 560029",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=NIMHANS+Bengaluru",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "In-person psychiatric emergency assessment and triage. Phone line connects to hospital casualty exchange. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "in-hosp-aiims",
+          "resource_name": "AIIMS New Delhi — Department of Psychiatry Emergency",
+          "authority": "All India Institute of Medical Sciences (MoHFW)",
+          "telephone": "011-26588500",
+          "location_address": "Ansari Nagar East, Ring Road, New Delhi • PIN 110029",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=AIIMS+Psychiatry+New+Delhi",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Level-1 emergency department with dedicated psychiatric crisis stabilization. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "in-hosp-ihbas",
+          "resource_name": "IHBAS (Institute of Human Behaviour and Allied Sciences) Emergency",
+          "authority": "Government of NCT of Delhi",
+          "telephone": "011-22599750",
+          "location_address": "Dilshad Garden, J&K Block, New Delhi • PIN 110095",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=IHBAS+Dilshad+Garden+Delhi",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Autonomous psychiatric hospital casualty and crisis intervention center. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "in-hosp-sion",
+          "resource_name": "Lokmanya Tilak Municipal General Hospital (Sion Hospital) — Psychiatry",
+          "authority": "Municipal Corporation of Greater Mumbai (MCGM)",
+          "telephone": "022-24076381",
+          "location_address": "Sion West, Sulochana Shetty Road, Mumbai • PIN 400022",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=Sion+Hospital+Mumbai+Psychiatry",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Tertiary public municipal hospital casualty department with on-call psychiatry. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "in-hosp-cip-ranchi",
+          "resource_name": "Central Institute of Psychiatry (CIP Ranchi) — Emergency",
+          "authority": "Directorate General of Health Services, MoHFW",
+          "telephone": "0651-2451115",
+          "location_address": "Kanke, Ranchi, Jharkhand • PIN 834006",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=Central+Institute+of+Psychiatry+Ranchi",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Premier national psychiatric hospital casualty unit for Eastern India. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "in-hosp-scb-cuttack",
+          "resource_name": "Mental Health Institute (CoE), SCB Medical College",
+          "authority": "Health & Family Welfare Department, Government of Odisha",
+          "telephone": "0671-2414080",
+          "location_address": "Manglabag, Cuttack, Odisha • PIN 753007",
+          "resource_type": "secondary_hospital_facility",
+          "modality": [
+            "voice",
+            "in_person"
+          ],
+          "availability": "24/7 Casualty Desk",
+          "toll_free": false,
+          "official_url": "https://maps.google.com/?q=SCB+Medical+College+Mental+Health+Institute+Cuttack",
+          "source_screen": "19_crisis_support_helplines_india_telemanas.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Centre of Excellence in Mental Health casualty and inpatient triage. (Operational availability has not been independently tested.)",
+          "governing_authority": "public_hospital_facility",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        }
+      ]
+    },
+    "US": {
+      "country_name": "United States",
+      "statutory_context": "National Suicide Hotline Designation Act of 2020",
+      "emergency_dispatch": [
+        {
+          "resource_id": "us-emergency-911",
+          "resource_name": "Emergency 911",
+          "authority": "Federal Communications Commission (FCC) / Local Dispatch",
+          "telephone": "911",
+          "alternate_telephone": null,
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.911.gov",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Immediate physical emergency, rescue, and police dispatch. Can dispatch mobile crisis units in participating jurisdictions. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "us-988-lifeline",
+          "resource_name": "988 Suicide & Crisis Lifeline",
+          "authority": "Substance Abuse and Mental Health Services Administration (SAMHSA) & Vibrant Emotional Health",
+          "telephone": "988",
+          "alternate_telephone": "1-800-273-8255",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "languages": [
+            "English",
+            "Spanish",
+            "240+ Languages via Tele-Interpretation"
+          ],
+          "official_url": "https://988lifeline.org",
+          "sms_instructions": "Text 988",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Free and confidential support for individuals in suicidal crisis or emotional distress. Dial 988 or text 988 directly. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "us-trevor-project",
+          "resource_name": "The Trevor Project",
+          "authority": "The Trevor Project (Accredited Non-Profit)",
+          "telephone": "1-866-488-7386",
+          "alternate_telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.thetrevorproject.org",
+          "sms_instructions": "Text START to 678-678",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Suicide prevention and crisis intervention specifically trained for LGBTQ young people. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "source_screen"
+        },
+        {
+          "resource_id": "us-veterans-crisis-line",
+          "resource_name": "Veterans Crisis Line",
+          "authority": "U.S. Department of Veterans Affairs (VA)",
+          "telephone": "988",
+          "dialing_instructions": "Dial 988, then press 1",
+          "alternate_telephone": "1-800-273-8255",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.veteranscrisisline.net",
+          "sms_instructions": "Text 838255",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Direct connection for Service members, Veterans, and family members. Deaf/hard-of-hearing dial 711 then 988. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_text_services": [
+        {
+          "resource_id": "us-crisis-text-line",
+          "resource_name": "Crisis Text Line",
+          "authority": "Crisis Text Line (501(c)(3) Non-Profit)",
+          "telephone": "741741",
+          "sms_instructions": "Text HOME to 741741",
+          "resource_type": "crisis_text_service",
+          "modality": [
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.crisistextline.org",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Free, confidential SMS triage connecting individuals to trained volunteer crisis counselors. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ]
+    },
+    "UK": {
+      "country_name": "United Kingdom",
+      "statutory_context": "National Health Service (NHS) Mental Health Care Pathways",
+      "emergency_dispatch": [
+        {
+          "resource_id": "uk-emergency-999",
+          "resource_name": "Emergency Services (UK)",
+          "authority": "Emergency Authorities (Police, Fire, Ambulance)",
+          "telephone": "999",
+          "alternate_telephone": "112",
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Immediate physical danger or medical emergency. Free from any landline or mobile. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "uk-nhs-111",
+          "resource_name": "NHS 111 Mental Health Services",
+          "authority": "National Health Service (NHS England, Scotland, Wales)",
+          "telephone": "111",
+          "dialing_instructions": "Dial 111, select option 2 for Mental Health",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.nhs.uk/service-search/mental-health/find-an-urgent-mental-health-helpline",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Urgent mental health assessment connecting users to local NHS trust crisis teams. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "uk-samaritans",
+          "resource_name": "Samaritans UK",
+          "authority": "Samaritans (Registered Charity)",
+          "telephone": "116 123",
+          "alternate_telephone": null,
+          "email_contact": "jo@samaritans.org",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "email"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.samaritans.org",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Completely free, non-judgmental 24-hour emotional listening service. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_text_services": [
+        {
+          "resource_id": "uk-shout-text",
+          "resource_name": "Shout Crisis Text Line",
+          "authority": "Mental Health Innovations (Registered Charity)",
+          "telephone": "85258",
+          "sms_instructions": "Text SHOUT to 85258",
+          "resource_type": "crisis_text_service",
+          "modality": [
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://giveusashout.org",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Free and confidential text messaging support across all major UK networks. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ]
+    },
+    "CA": {
+      "country_name": "Canada",
+      "statutory_context": "Public Health Agency of Canada (PHAC)",
+      "emergency_dispatch": [
+        {
+          "resource_id": "ca-emergency-911",
+          "resource_name": "Emergency 911 (Canada)",
+          "authority": "Provincial / Municipal Emergency Dispatch",
+          "telephone": "911",
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": null,
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Immediate physical risk, dispatch, or emergency medical response. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": null
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "ca-988-helpline",
+          "resource_name": "988 Suicide Crisis Helpline (Canada)",
+          "authority": "Public Health Agency of Canada (PHAC) / Centre for Addiction and Mental Health (CAMH)",
+          "telephone": "988",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "languages": [
+            "English",
+            "French"
+          ],
+          "official_url": "https://988.ca",
+          "sms_instructions": "Text 988",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Pan-Canadian 24/7 suicide crisis phone and text helpline. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "ca-hope-for-wellness",
+          "resource_name": "Hope for Wellness Help Line",
+          "authority": "Indigenous Services Canada",
+          "telephone": "1-855-242-3310",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "webchat"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "languages": [
+            "English",
+            "French",
+            "Cree",
+            "Ojibway",
+            "Inuktitut (on request)"
+          ],
+          "official_url": "https://www.hopeforwellness.ca",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Immediate mental health counselling for all Indigenous peoples across Canada. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "ca-trans-lifeline",
+          "resource_name": "Trans Lifeline (Canada)",
+          "authority": "Trans Lifeline Non-Profit",
+          "telephone": "1-877-330-6366",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://translifeline.org",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Peer support helpline run by and for trans individuals, divested from non-consensual police interventions. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_text_services": [
+        {
+          "resource_id": "ca-crisis-text-line",
+          "resource_name": "Crisis Text Line Canada (Powered by Kids Help Phone)",
+          "authority": "Kids Help Phone / Crisis Text Line Canada",
+          "telephone": "686868",
+          "sms_instructions": "Text 686868 (Youth) or 741741 (Adults)",
+          "resource_type": "crisis_text_service",
+          "modality": [
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://kidshelpphone.ca",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Free, confidential text conversations for youth and adults across Canada. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ]
+    },
+    "AU": {
+      "country_name": "Australia",
+      "statutory_context": "National Mental Health Commission / Lifeline Australia",
+      "emergency_dispatch": [
+        {
+          "resource_id": "au-emergency-000",
+          "resource_name": "Triple Zero (000)",
+          "authority": "Australian Government Emergency Services",
+          "telephone": "000",
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.triplezero.gov.au",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Primary emergency number in Australia for immediate life-threatening physical peril. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "au-lifeline",
+          "resource_name": "Lifeline Australia",
+          "authority": "Lifeline Australia (Accredited National Charity)",
+          "telephone": "13 11 14",
+          "sms_instructions": "Text 0477 13 11 14",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "sms"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://www.lifeline.org.au",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Australia's national telephone and SMS crisis support and suicide prevention service. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "au-beyond-blue",
+          "resource_name": "Beyond Blue Support Service",
+          "authority": "Beyond Blue (Accredited Mental Health Organization)",
+          "telephone": "1300 22 4636",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "webchat"
+          ],
+          "availability": "24/7",
+          "toll_free": false,
+          "official_url": "https://www.beyondblue.org.au",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Telephone and webchat support provided by mental health professionals across Australia. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "au-suicide-call-back",
+          "resource_name": "Suicide Call Back Service",
+          "authority": "On the Line Australia (Funded by Department of Health)",
+          "telephone": "1300 659 467",
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "voice",
+            "online"
+          ],
+          "availability": "24/7",
+          "toll_free": false,
+          "official_url": "https://www.suicidecallbackservice.org.au",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Professional phone and online counseling for individuals affected by suicidal thoughts. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ]
+    },
+    "GL": {
+      "country_name": "Global / International Fallback",
+      "statutory_context": "International Association for Suicide Prevention (IASP)",
+      "emergency_dispatch": [
+        {
+          "resource_id": "gl-sos-112",
+          "resource_name": "International Emergency Standard (112)",
+          "authority": "European Union / International Telecommunication Union (ITU)",
+          "telephone": "112",
+          "resource_type": "emergency_dispatch",
+          "modality": [
+            "voice"
+          ],
+          "availability": "24/7",
+          "toll_free": true,
+          "official_url": "https://ec.europa.eu/digital-single-market/en/112",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Standardized emergency dispatch operating in all EU member states and many participating global nations. (Operational availability has not been independently tested.)",
+          "governing_authority": "statutory_governmental",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ],
+      "crisis_counselling": [
+        {
+          "resource_id": "gl-befrienders",
+          "resource_name": "Befrienders Worldwide",
+          "authority": "Befrienders Worldwide (UK Registered Charity)",
+          "telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "web_directory"
+          ],
+          "availability": "24/7 Directory",
+          "toll_free": false,
+          "official_url": "https://www.befrienders.org",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Global volunteer network connecting users to over 300 crisis centers across 32 countries. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "gl-findahelpline",
+          "resource_name": "findahelpline.com (ThroughLine)",
+          "authority": "ThroughLine (Public Benefit Corporation)",
+          "telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "web_directory"
+          ],
+          "availability": "24/7 Directory",
+          "toll_free": false,
+          "official_url": "https://findahelpline.com",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Independent, zero-tracking directory mapping verified crisis lines across 130+ countries. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        },
+        {
+          "resource_id": "gl-iasp-directory",
+          "resource_name": "IASP Crisis Centre Directory",
+          "authority": "International Association for Suicide Prevention (IASP)",
+          "telephone": null,
+          "resource_type": "crisis_counselling",
+          "modality": [
+            "web_directory"
+          ],
+          "availability": "24/7 Directory",
+          "toll_free": false,
+          "official_url": "https://www.iasp.info/resources/Crisis_Centres",
+          "source_screen": "02_crisis_protocol_regional_safety_hotlines.html",
+          "verification_status": "source_extracted",
+          "operational_notes": "Global accredited directory of suicide prevention and crisis intervention centers across 5 continents. (Operational availability has not been independently tested.)",
+          "governing_authority": "institutional_ngo",
+          "uptime_verification": "unverified_operational_availability",
+          "url_source": "editorial_enrichment"
+        }
+      ]
+    }
+  },
+  "schema_version": "1.1.0",
+  "schema_notes": {
+    "governing_authority": "Type of authority behind the resource ('statutory_governmental', 'institutional_ngo', 'public_hospital_facility').",
+    "uptime_verification": "Status of operational availability testing ('unverified_operational_availability' for all, as no automated or manual telephony testing has been performed).",
+    "url_source": "'source_screen' for links directly present in Stitch HTML, 'editorial_enrichment' for URLs added based on organization domain knowledge, or null if no URL exists.",
+    "verification_status": "'source_extracted' to reflect provenance from UI assets rather than an operational certification by MindBridge."
+  }
+}
